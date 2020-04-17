@@ -1,0 +1,18 @@
+#!/bin/sh
+
+INPUT_DIRECTORY="./img_in"
+OUTPUT_DIRECTORY="./img_out/"
+NUM_THREADS=0
+PIC_SCALE=0.9
+WHITE_THRESHOLD=230
+PHOTOS_PER_SCAN=3
+BLUR_AMOUNT=9
+
+python scan_cropper.py \
+    -d $INPUT_DIRECTORY \
+    -o $OUTPUT_DIRECTORY \
+    -n $NUM_THREADS \
+    -s $PIC_SCALE \
+    -t $WHITE_THRESHOLD \
+    -i $PHOTOS_PER_SCAN \
+    -b $BLUR_AMOUNT -a
