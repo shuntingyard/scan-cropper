@@ -5,6 +5,10 @@ A quick python script designed to find photographs in scanned images (in particu
 It is designed to find multiple photos at a time.
 It both crops and orients them, so scanned photos don't have to be perfectly straight.
 
+## Why Forking?
+I didn't manage to have photos recognized without problems, so I'm planning to
+tweak early recognition stages in the original script.
+
 ## Example
 You could scan a photo album 3 photos at a time, leaving some space between them on the scanner.
 Run the script with `--photos-per-scan 3` on your scanned files.
